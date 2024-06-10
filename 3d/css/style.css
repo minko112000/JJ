@@ -1,0 +1,319 @@
+#live-num {
+  animation: star 3s linear infinite;
+}
+
+.tab div div {
+  width: 70% !important;
+}
+
+.tab div div small {
+  font-size: .9em;
+}
+
+.live-session-box {
+  width: 100%;
+  font-family: Sans-Serif;
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  overflow: hidden;
+}
+
+.live-session-box div {
+  height: 60px;
+  width: 33.3%;
+  flex-direction: column;
+}
+
+.inner-page  {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(3px);
+  left: 0;
+  top: 0;
+  z-index: 99;
+}
+
+.answer,
+.session-parent {
+  width: 100%;
+  height: 50px;
+}
+
+.close-time {
+  width: 100%;
+  height: 100%;
+  justify-content: flex-end;
+}
+
+.action-parent,
+.num-tab-parent,
+.input-parent {
+  height: 50px;
+}
+
+.num-tab-parent div {
+  height: 50px;
+  width: 100%;
+}
+  
+.num-tab-parent,
+.num-tab-parent div i {
+  transition: all .5s;
+}
+  
+.action-parent div {
+  width: 30%;
+  height: 40px;
+}
+
+.wrapper {
+  height: calc(100% - 200px);
+  width: 90%;
+  transform: translateY(-25px);
+  overflow-y: scroll;
+  padding-bottom: 6px;
+}
+
+#slip {
+  height: calc(100% - 150px);
+  width: calc(100% - 30px);
+}
+
+.num-row {
+  height: 50px;
+  width: 100%;
+}
+
+.num-row:nth-child(even) {
+  background: #a57d90;
+}
+
+.num-row input,
+.num-row b {
+  width: 25%;
+  font-weight: 400;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.limit-sx b {
+  height: 40px;
+  flex: none;
+}
+
+#dream-page .limit-sx b {
+  width: 50px;
+  height: 50px;
+}
+
+.input-parent i {
+  height: 40px;
+  width: 40px;
+  z-index: 1;
+}
+
+.input-parent input {
+  height: 40px;
+  width: calc(100% - 200px);
+}
+
+.input-parent b {
+  height: 40px;
+  width: 100px;
+  z-index: 1;
+}
+
+.r:after,
+.count {
+  height: 30px;
+  width: 30px;
+  font-size: .7em;
+  top: -14px;
+  right: -14px;
+  border: 3px solid #a57d90;
+  z-index: 2;
+  animation: leftToright .5s linear forwards;
+}
+
+.left-to-right {
+  animation: leftToright .5s linear forwards;
+}
+
+@keyframes leftToright {
+  0% {
+    right: 15px;
+  }
+  25% {
+    right: -16px;
+  }
+  
+  50% {
+    right: 10px;
+  }
+  
+  100% {
+    right: -14px;
+  }
+}
+
+.num-parent {
+  height: calc(100% - 55px);
+  width: 100%;
+  padding-top: 14px;
+}
+
+.num {
+  width: 50px;
+  height: 50px;
+  position: relative;
+}
+
+.num:before {
+  content: '';
+  position: absolute;
+  width: 56px;
+  bottom: -3px;
+  left: -3px;
+  border-radius: 3px;
+  border-radius: 50%;
+  height: 56px;
+  background: linear-gradient(360deg, red var(--limit-deg), rgb(25,134,20));
+  z-index: -1;
+}
+
+.num-selected {
+  background: linear-gradient(135deg, rgb(25,134,20), rgb(30,115,26));
+}
+
+.r:after {
+  content: 'R';
+  position: absolute;
+  border-radius: 50%;
+  font-size: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, rgb(25,134,20), rgb(30,115,26));
+}
+
+.log-btn-gp {
+  width: 100%;
+  height: 70px;
+}
+
+.log-btn {
+  height: 65px;
+  width: 50%;
+  flex-direction: column;
+}
+
+.log-btn i {
+  font-size: 1.2em;
+}
+
+.log-btn p {
+  font-size: .8em;
+}
+
+.underline {
+  height: 3px;
+  width: 50%;
+  left: 0;
+  bottom: 0;
+  transition: all .5s;
+}
+
+#history-wrapper {
+  width: 100%;
+  height: calc(100% - 70px);
+}
+
+.history-box div:nth-child(odd) {
+  background: #a57d90;
+}
+
+
+.ranking-wrapper > div,
+.ranking-wrapper img {
+  width: 100%;
+}
+
+.ranking-wrapper img {
+  filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.2));
+}
+
+.ranking-box {
+  width: 32%;
+  transform: scale(.95);
+  flex-direction: column;
+  font-size: .8em;
+}
+
+.rank2 {
+  transform: translateY(48px);
+}
+
+.rank3 {
+  transform: translateY(68px);
+}
+
+.ranking-box .pp {
+  height: 60px;
+  width: 60px;
+  font-size: 3em;
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.ranking-box .pp:before {
+  content: '🎀';
+  position: absolute;
+  bottom: -42px;
+}
+
+.ranking-box small {
+  white-space: nowrap;
+}
+
+.ranking-box div {
+  width: 100%;
+}
+
+.ranking-div {
+  height: 80px;
+  width: 100%;
+}
+
+.ranking-div div {
+  height: 100%;
+  width: 100%;
+}
+
+.ranking-div .one {
+  width: 80px;
+}
+
+.ranking-div .one i {
+  font-size: 4em;
+}
+
+.ranking-div .one small {
+  transform: translateY(-8px);
+  font-weight: 600;
+}
+
+.ranking-div .two {
+  width: calc(100% - 80px);
+}
+
+.ranking-div .two div {
+  width: 100%;
+  height: 50%;
+}
+
+.ranking-div .two div b {
+  width: 33%;
+  text-align: center;
+  font-size: .9em;
+}
